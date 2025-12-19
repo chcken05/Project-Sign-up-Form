@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project: Sign-up Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="brand-logo">
+        <img src="./images/bg.jpg" alt="bg" />
+        <div class="logo">
+          <img src="./images/logo.png" alt="logo" />
+          <h1 class="odin">ODIN</h1>
+        </div>
+        <p>Photo by Halie West on Unsplash</p>
+      </div>
+      <div class="form-content">
+        <div class="heading">
+          <p>
+            This is not a real online service! You know you need something
+            <br />
+            like this in your life to help you realize your deepest dreams.<br />
+            Sign up now to get started.
+          </p>
+          <p>You know you want to.</p>
+        </div>
+        <form action="" class="forms" id="myForm">
+          <h1>Let's do this!</h1>
+          <div class="form-input">
+            <label for="fname">first name</label>
+            <input type="text" id="fname" name="fname" />
+          </div>
+          <div class="form-input">
+            <label for="lname">last name</label>
+            <input type="text" id="lname" name="lname" />
+          </div>
+          <div class="form-input">
+            <label for="email">email</label>
+            <input type="email" id="email" name="email" />
+          </div>
+          <div class="form-input">
+            <label for="number">phone number</label>
+            <input type="text" name="number" id="number" />
+          </div>
+          <div class="form-input">
+            <label for="password">password</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              required
+              minlength="8"
+            />
+          </div>
+          <div class="form-input">
+            <label for="confirm">confirm password</label>
+            <input
+              type="password"
+              name="confirm"
+              id="confirm"
+              required
+              minlength="8"
+            />
+          </div>
+        </form>
+        <span>
+          <button type="submit" form="myForm">Create Account</button>
+          <p>Already have an account? <a href="#">Log in</a></p>
+        </span>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,165 @@
+/* css reset */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+*:not(dialog) {
+  margin: 0;
+}
+
+img {
+  display: block;
+  /* max-width: 100%; */
+}
+
+body {
+  line-height: 1.5;
+  height: 100vh;
+  width: 100%;
+}
+
+html {
+  background-color: black;
+  margin: 0 300px;
+}
+
+/* my font */
+
+@font-face {
+  font-family: Norse;
+  src: url("./fonts/Norse-Bold.otf") format("opentype");
+}
+
+/* main styling */
+
+.container {
+  display: flex;
+  height: 100%;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+
+.brand-logo {
+  height: 100%;
+  width: 40%;
+  position: relative;
+}
+
+.logo img {
+  width: 90px;
+  height: 120px;
+}
+
+.logo h1 {
+  font-size: 5rem;
+  font-family: Norse;
+  color: white;
+}
+
+.logo {
+  width: 100%;
+  position: absolute;
+  top: 20%;
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(00, 00, 00, 0.5);
+}
+
+.brand-logo p {
+  position: absolute;
+  bottom: 10px;
+  left: 30%;
+  color: white;
+}
+
+/* form styling */
+
+.form-content {
+  background-color: #f5f7f9;
+  width: 70%;
+}
+
+.form-content > *:not(.forms) {
+  padding-left: 2.5rem;
+}
+
+.heading {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-top: 8rem;
+}
+
+.heading :last-child {
+  padding: 1.5rem 0;
+}
+
+.forms {
+  background-color: white;
+  padding: 3rem;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.forms h1 {
+  width: 100%;
+}
+
+.form-input {
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  flex: 1 50%;
+  margin: 1ch 0;
+  /* gap: 1ch; */
+  font-family: inter;
+}
+
+.form-input input {
+  width: 70%;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  padding: 0.5em;
+}
+
+input[type="password"]:user-invalid {
+  border: 1px solid red;
+}
+
+input[type="password"]:user-valid {
+  border: 1px solid green;
+}
+
+span {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1ch;
+}
+
+span button {
+  margin: 2ch 0;
+  padding: 0.75rem 3rem;
+  width: 200px;
+  border-radius: 6px;
+  border: none;
+  background-color: #596d48;
+  color: white;
+  font-size: 15px;
+}
+
+span p {
+  font-size: 16px;
+  font-weight: bold;
+  a {
+    color: #596d48;
+    text-decoration: none;
+  }
+}
